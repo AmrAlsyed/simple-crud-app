@@ -17,7 +17,7 @@ function App() {
       const response = await axios.get("http://localhost:3000/api/clients/");
       setTableData(response.data);
     } catch (error) {
-      setError(error.message);
+      console.error(error.message);
     }
   };
 

@@ -18,7 +18,7 @@ const TableList = ({ onOpen, searchTerm, tableData, setTableData }) => {
 
     if (confirmDelete) {
       try {
-        await axios.delete(`http://localhost:3000/api/clients/${id}`);
+        await axios.delete(`${import.meta.env.VITE_API_URL}/api/clients/${id}`);
         setTableData((prevData) =>
           prevData.filter((client) => client.id !== id)
         );

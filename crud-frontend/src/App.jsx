@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Modalform from "./components/Modalform";
-import NavBar from "./components/NavBar";
-import TableList from "./components/Tablelist";
+import Modalform from "./components/Modalform.jsx";
+import NavBar from "./components/NavBar.jsx";
+import TableList from "./components/Tablelist.jsx";
 import axios from "axios";
 
 function App() {
